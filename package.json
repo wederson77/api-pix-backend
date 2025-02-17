@@ -1,7 +1,7 @@
 {
   "name": "api-pix",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/index.ts",
   "scripts": {
     "start": "npx ts-node api-pix-backend/index.ts"
   },
