@@ -1,0 +1,19 @@
+{
+  "name": "api-pix",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx ts-node api-pix-backend/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "gn-api-sdk-typescript": "^2.0.1"
+  }
+}
