@@ -56,7 +56,7 @@ const server = createServer((req, res) => {
         return;
     }
 
-    if (req.method === "POST" && req.url === "/cobranca") {
+    if (req.method === "POST" && req.url === "https://api-pix-backend.onrender/cobranca") {
         let body = "";
 
         req.on("data", chunk => {
