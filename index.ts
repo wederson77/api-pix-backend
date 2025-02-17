@@ -4,6 +4,7 @@ import Gerencianet from "gn-api-sdk-typescript";
 import options from "./credentials";
 
 const gerencianet = new Gerencianet(options);
+const PORT = process.env.PORT || 9000;
 
 function criarCobrancaImediata(devedor: { cpf: string; nome: string }, valor: string) {
     return new Promise((resolve, reject) => {
@@ -83,7 +84,7 @@ const server = createServer((req, res) => {
 });
 
 // Iniciar servidor na porta 9000
-server.listen(9000, () => console.log("Servidor rodando na porta 9000 🚀"));
+server.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT} 🚀`));
 
 
 // import { createServer } from "http";
